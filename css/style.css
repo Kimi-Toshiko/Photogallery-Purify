@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Mansalva&family=Thasadith:wght@400;700&display=swap');
+
+
+
+h1.animate__animated.animate__fadeInUp, .hint.animate__animated.animate__fadeInUp {
+    animation-delay: 0.2s;
+    --animate-duration: 1.8s;
+}
+.animate__animated.animate__fadeIn {
+    animation-delay: 0.2s;
+    --animate-duration: 2.2s;
+}
+.showed-photo-full.animate__animated.animate__fadeIn, .showed-photo-full.animate__animated.animate__fadeOut {
+    --animate-delay: 0s;
+    --animate-duration: 0.5s;
+}
+
+
+h1::selection, li a::selection, h2::selection, blockquote::selection {
+    background-color: #ccf1fe;
+}
+h1::-moz-selection, li a::-moz-selection, h2::-moz-selection, blockquote::-moz-selection {
+    background-color: #ccf1fe;
+}
+footer h2::selection, footer p::selection, footer li a::selection {
+    background-color: #131313;
+}
+footer h2::-moz-selection, footer p::-moz-selection, footer li a::-moz-selection {
+    background-color: #131313;
+}
+
+
+
+html {
+    font-size: 1vmax;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Thasadith', sans-serif;
+    background: #ffffff;
+    background: linear-gradient(232deg, rgba(254,217,224,1) 0%, rgba(254,227,238,0) 39%, rgba(254,217,224,1) 100%);
+}
+
+.nav {
+    font-size: 1.1rem;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: gray;
+    border-bottom: 1px solid transparent;
+    transition: color .3s ease-in, font-weight .2s ease-out, border-bottom .4s ease-in-out;
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: 700;
+    border-bottom: 1px solid black
+}
+
+.active {
+    color: black;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Beth Ellen', cursive;
+}
+
+aside {
+    width: 5vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 25vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+aside a i {
+    margin: 2vh auto;
+    cursor: pointer;
+    transition: color .2s ease-in;
+    color: #212529;
+}
+
+.fa-facebook-f:hover {
+    color: #4267b2;
+}
+.fa-pinterest-p:hover {
+    color: #bd081c;
+}
+.fa-telegram-plane:hover {
+    color: #0084c6;
+}
+.fa-twitter:hover {
+    color: #1c9cea;
+}
+.fa-vk:hover {
+    color: #43638a;
+}
+
+.hint {
+    width: 100%;
+    text-align: center;
+    color: gray;
+    margin-top: 3rem;
+}
+
+.photo-gallery {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.photo-gallery .gallery-image {
+    width: 19.8vw;
+    height: 19.8vw;
+}
+
+.gallery-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin: 5%;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out;
+}
+
+.gallery-image img:hover {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    margin-top: 8rem;
+    background-color: #2b3336;
+    color: #ffffff;
+    justify-content: space-around;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+}
+
+.footer-heading {
+    margin-bottom: 1rem;
+}
+
+.footer-heading h2 {
+    font-size: 1.4rem;
+}
+
+footer p {
+    color: lightgray;
+    font-size: 0.9rem;
+}
+
+.footer-nav ul li a {
+    color: lightgray;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+
+.showed-photo-full {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.showed-photo-width {
+    width: 65%;
+    height: auto;
+    margin: auto auto;
+}
+
+.showed-photo-height {
+    height: 90%;
+    width: auto;
+    margin: auto auto;
+}
+
+.btn-exit {
+    font-size: 3rem;
+    position: absolute;
+    color: #ffffff;
+    margin-left: 93vw;
+    cursor: pointer;
+    font-family: 'Mansalva', cursive;
+    transition: color .3s ease;
+}
+
+.btn-exit:hover {
+    color: rgba(254,217,224,1);
+}
+
+.preloader {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader img {
+    width: 4%;
+}
+
+.preloader-text {
+    margin-top: 1rem;
+}
+
+.preloader-text p {
+    font-weight: bold;
+}
+
+.share-for-mobile {
+    display: none;
+}
